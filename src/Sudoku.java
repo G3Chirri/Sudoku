@@ -1,6 +1,41 @@
 /**
  * ANDRES FELIPE GOMEZ PARRA
  * SUDOKU
+ * Explicacion del codigo
+ * Este código es una implementación del juego Sudoku en Java. A continuación, te explicaré el código línea por línea:
+ *
+ * Se inicia la declaración del programa con un comentario que indica el autor y el título del programa.
+ * 3-9. Se importan las bibliotecas necesarias para el programa, incluyendo las clases de entrada y salida estándar, manipulación de archivos, manipulación de matrices y operaciones matemáticas.
+ *
+ * Se define la clase principal del programa llamada "Sudoku".
+ *
+ * Se declara una variable estática llamada "nivel" y se inicializa con el valor 1.
+ *
+ * 16-62. Se define un método llamado "cargar_juego" que genera y devuelve una matriz de números para el juego de Sudoku, dependiendo del nivel especificado como parámetro. El método utiliza una estructura switch-case para determinar el nivel y asignar los valores correspondientes a la matriz.
+ *
+ * 64-70. Se define un método llamado "es_origen" que verifica si una celda en la matriz del juego es un valor original (predefinido) o si ha sido modificado por el usuario.
+ *
+ * 72-85. Se define un método llamado "terminado" que verifica si el juego ha sido completado correctamente, es decir, si no hay celdas vacías en la matriz.
+ *
+ * 87-116. Se define un método llamado "mensaje" que imprime un mensaje formateado en la consola. Este método se utiliza para mostrar información al usuario de una manera estilizada.
+ *
+ * 118-172. Se define un método llamado "imprime_vector" que imprime la matriz del juego en la consola en forma de cuadrícula. También muestra los caracteres "ù" en las celdas que son valores originales.
+ *
+ * 174-194. Se define un método llamado "existe_fila" que verifica si un número dado existe en la fila especificada de la matriz.
+ *
+ * 196-221. Se define un método llamado "existe_columna" que verifica si un número dado existe en la columna especificada de la matriz.
+ *
+ * 223-233. Se define un método llamado "comprobar_indice" que verifica si un número dado existe en el rango válido de índices de fila o columna en la matriz.
+ *
+ * 235-245. Se define un método llamado "comprobar_valor" que verifica si un número dado está en el rango válido de valores permitidos en el juego.
+ *
+ * 247-297. Se define un método llamado "existe_caja" que verifica si un valor dado existe en la caja correspondiente a la fila y columna especificadas en la matriz.
+ *
+ * 299-448. Se define el método principal "main" que es el punto de entrada del programa. El método utiliza un bucle infinito para permitir al usuario ingresar valores y actualizar la matriz del juego. También muestra mensajes al usuario según el resultado de las validaciones. El bucle se repite hasta que el juego esté completado correctamente.
+ *
+ * Al final del programa, se incrementa el nivel del juego cuando se completa exitosamente y se carga una nueva matriz para el siguiente nivel.
+ *
+ * Esta es una explicación general del código. Cada método cumple una función específica para el funcionamiento del juego de Sudoku.
  */
 
 //bibliotecas necesarias para el programa
